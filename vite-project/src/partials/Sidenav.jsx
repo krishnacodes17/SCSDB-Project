@@ -21,18 +21,15 @@ function Sidenav() {
             {" "}
             <i  class=" mr-2 ri-bard-fill"></i> Popular
           </Link>
-          <Link className="hover:bg-[#6556CD] p-5 hover:text-white duration-300 rounded-lg ">
+          <Link to='/movies' className="hover:bg-[#6556CD] p-5 hover:text-white duration-300 rounded-lg ">
             {" "}
             <i class=" mr-2 ri-movie-2-fill"></i> Movies
           </Link>
-          <Link className="hover:bg-[#6556CD] p-5 hover:text-white duration-300 rounded-lg ">
+          <Link to="/tvshow" className="hover:bg-[#6556CD] p-5 hover:text-white duration-300 rounded-lg ">
             {" "}
             <i class=" mr-2 ri-tv-2-fill"></i> Tv shows
           </Link>
-          <Link className="hover:bg-[#6556CD] p-5 hover:text-white duration-300 rounded-lg ">
-            {" "}
-            <i class=" mr-2 ri-team-fill"></i> People
-          </Link>
+
         </nav>
 
 
