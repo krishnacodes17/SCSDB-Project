@@ -1,10 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Crasual from "./Crasual";
 
 function HorizontalCard({ data }) {
   const navigate = useNavigate();
-
-
 
 //   // जब user movie पर click करे
 //   const handleMovieClick = (movie) => {
@@ -25,7 +24,7 @@ function HorizontalCard({ data }) {
   }
 
   return (
-    <div className="h-[60vh] w-full p-5 overflow-hidden bg-gradient-to-b from-zinc-900 to-zinc-800 rounded-lg">
+    <div className=" w-full p-5 overflow-hidden bg-gradient-to-b from-zinc-900 to-zinc-800 rounded-lg">
       {/* Header */}
       <div className="mb-6">
         <h1 className="text-4xl font-bold text-white flex items-center gap-3">
@@ -34,6 +33,11 @@ function HorizontalCard({ data }) {
         </h1>
         <p className="text-zinc-400 mt-2">{data.length} movies trending</p>
       </div>
+
+      {/* Carousel Component */}
+      <Crasual data={data} />
+
+
 
       {/* Movies Container - Horizontal Scroll */}
       <div className="w-full h-[calc(100%-100px)] overflow-x-auto overflow-y-hidden scrollbar-hide">

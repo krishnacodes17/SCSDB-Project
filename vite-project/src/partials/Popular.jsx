@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import Topnav from './Topnav'
+import { useNavigate } from 'react-router-dom';
 import Cards from '../components/Cards'
 import axios from "../utils/axios"
-import { useNavigate } from 'react-router-dom'
 import InfiniteScroll from 'react-infinite-scroll-component';
+import Topnav from './Topnav'
 
-function Trending() {
 
-  const navigate = useNavigate()
+
+function Popular() {
+   const navigate = useNavigate()
 
   const [tranding, setTranding] = useState([]);
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
   const [searchIndex, setSearchIndex] = useState(0);
   
-  const searchKeywords = ["trending", "action", "popular", "marvel", "superhero", "adventure"];
+  const searchKeywords = ["popular", "hindi", "popular", "marvel", "superhero", "adventure"];
 
   const getSearch = async (pageNum = 1, searchIdx = searchIndex) => {
     try {
@@ -85,7 +86,7 @@ function Trending() {
       </div>
     </div>
   )
+
 }
 
-export default Trending
-                                                      
+export default Popular

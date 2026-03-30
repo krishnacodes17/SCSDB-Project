@@ -17,9 +17,9 @@ function Sidenav() {
             {" "}
             <i class="mr-2 ri-fire-fill"></i> Trending
           </Link>
-          <Link className="hover:bg-[#6556CD] p-5 hover:text-white duration-300 rounded-lg ">
+          <Link to="/popular" className="hover:bg-[#6556CD] p-5 hover:text-white duration-300 rounded-lg ">
             {" "}
-            <i class=" mr-2 ri-bard-fill"></i> Poplar
+            <i  class=" mr-2 ri-bard-fill"></i> Popular
           </Link>
           <Link className="hover:bg-[#6556CD] p-5 hover:text-white duration-300 rounded-lg ">
             {" "}
